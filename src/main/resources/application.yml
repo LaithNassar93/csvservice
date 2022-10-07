@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: csv-service
+  datasource:
+    password: USER
+    url: jdbc:mysql://localhost:3306/db
+    username: user
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+server:
+  port: 8085
