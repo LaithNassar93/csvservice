@@ -20,7 +20,4 @@ public class Student {
     private Double gpa;
     private LocalDate dateOfBirth;
 
-    @OneToOne
-    private Authentication authentication;
-
 }

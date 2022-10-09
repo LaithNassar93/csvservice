@@ -8,8 +8,9 @@ import java.io.Serializable;
 
 @AllArgsConstructor
 @Getter
-public record JwtResponse(String jwtToken) implements Serializable {
+public class JwtResponse implements Serializable {
 
     @Serial
     private static final long serialVersionUID = -8091879091924046844L;
+    private String jwtToken;
 }
