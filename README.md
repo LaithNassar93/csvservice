@@ -16,19 +16,20 @@ docker-compose up -d
 
 Use Postman 
 
-```docker
+
 
 # 1. Call Http Post and it will return Token
-
+```docker
 curl --location --request POST 'http://localhost:8085/api/v1/authenticate' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "username": "laith",
     "password": "123123"
 }'
-
+```
 
 # 2. Call Http Get Job, you have to use the token from step one 
-
+```docker
 curl --location --request GET 'http://localhost:8085/api/v1/job' \
 --header 'Authorization: Bearer TOKEN_FROM_STEP_ONE'
+```
