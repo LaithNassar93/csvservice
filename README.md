@@ -10,6 +10,7 @@ Run command:
 
 ```bash
 docker-compose up -d
+
 ```
 
 ## Usage
